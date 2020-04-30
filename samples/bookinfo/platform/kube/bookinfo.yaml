@@ -32,7 +32,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  namespace: '${ parameters.namespace }'
+  namespace: helloworld
   name: details
   labels:
     app: details
@@ -47,7 +47,7 @@ spec:
 apiVersion: v1
 kind: ServiceAccount
 metadata:
-  namespace: '${ parameters.namespace }'
+  namespace: helloworld
   name: bookinfo-details
   labels:
     account: details
@@ -55,7 +55,7 @@ metadata:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: '${ parameters.namespace }'
+  namespace: helloworld
   name: details-v1
   labels:
     app: details
@@ -86,7 +86,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  namespace: '${ parameters.namespace }'
+  namespace: helloworld
   name: ratings
   labels:
     app: ratings
@@ -101,7 +101,7 @@ spec:
 apiVersion: v1
 kind: ServiceAccount
 metadata:
-  namespace: '${ parameters.namespace }'
+  namespace: helloworld
   name: bookinfo-ratings
   labels:
     account: ratings
@@ -109,7 +109,7 @@ metadata:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: '${ parameters.namespace }'
+  namespace: helloworld
   name: ratings-v1
   labels:
     app: ratings
@@ -140,7 +140,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  namespace: '${ parameters.namespace }'
+  namespace: helloworld
   name: reviews
   labels:
     app: reviews
@@ -155,7 +155,7 @@ spec:
 apiVersion: v1
 kind: ServiceAccount
 metadata:
-  namespace: '${ parameters.namespace }'
+  namespace: helloworld
   name: bookinfo-reviews
   labels:
     account: reviews
@@ -163,7 +163,7 @@ metadata:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: '${ parameters.namespace }'
+  namespace: helloworld
   name: reviews-v1
   labels:
     app: reviews
@@ -204,7 +204,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: '${ parameters.namespace }'
+  namespace: helloworld
   name: reviews-v2
   labels:
     app: reviews
@@ -245,7 +245,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: '${ parameters.namespace }'
+  namespace: helloworld
   name: reviews-v3
   labels:
     app: reviews
@@ -289,7 +289,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  namespace: '${ parameters.namespace }'
+  namespace: helloworld
   name: productpage
   labels:
     app: productpage
@@ -304,7 +304,7 @@ spec:
 apiVersion: v1
 kind: ServiceAccount
 metadata:
-  namespace: '${ parameters.namespace }'
+  namespace: helloworld
   name: bookinfo-productpage
   labels:
     account: productpage
@@ -312,7 +312,7 @@ metadata:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: '${ parameters.namespace }'
+  namespace: helloworld
   name: productpage-v1
   labels:
     app: productpage
